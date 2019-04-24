@@ -1,0 +1,23 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Aklny.Aklny.controller.DishForm"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+		<App>
+		<pages>
+			<Page title="Title">
+				<content>
+				<Select xmlns="sap.m" id="dish_group" items="{model>/dishes}">
+					        <items>
+					            <core:Item xmlns:core="sap.ui.core" key="{model>id}" text="{model>description}"/>
+					            </items>
+					    </Select>
+				<Select xmlns="sap.m" id="location_group" items="{model>/locations}">
+					        <items>
+					            <core:Item xmlns:core="sap.ui.core" key="{model>id}" text="{model>name}"/>
+					            </items>
+					    </Select>
+				<Button xmlns="sap.m" text="Choose" id="button4" press="onSubmitPressed"/>
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

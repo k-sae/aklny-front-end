@@ -1,0 +1,23 @@
+<mvc:View controllerName="Aklny.Aklny.controller.Login" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+							<Text xmlns="sap.m"  id="result"/>
+							    <Select xmlns="sap.m" width="12rem" id="employees" items="{model>/results}" name="username">
+							        <items>
+							            <core:Item xmlns:core="sap.ui.core" key="{model>username}" text="{model>username}" id="item0"/>
+							            </items>
+							    </Select>
+						    <Input xmlns="sap.m" width="12rem" type="Password" id="passwordInput" placeholder="password"/>
+						    <Button xmlns="sap.m" text="login" id="button0" press="onLoginPressed"/>
+					    </VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+
+</mvc:View>

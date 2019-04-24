@@ -1,0 +1,51 @@
+{
+  "welcomeFile": "/webapp/index.html",
+  "routes": [
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/Users",
+      "target": {
+        "type": "destination",
+        "name": "Aklny",
+        "entryPath": "/"
+      },
+      "description": "Back-end Aklny"
+	},
+	 {
+      "path": "/DishRegistration",
+      "target": {
+        "type": "destination",
+        "name": "Aklny",
+        "entryPath": "/dish_registration"
+      },
+      "description": "Back-end Aklny"
+	},
+	{
+      "path": "/Result",
+      "target": {
+        "type": "destination",
+        "name": "Aklny",
+        "entryPath": "/Result"
+      },
+      "description": "Back-end Aklny"
+	}
+  ],
+  "sendWelcomeFileRedirect": true
+}
