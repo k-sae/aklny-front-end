@@ -17,8 +17,6 @@ sap.ui.define([
 				+ jQuery.sap.storage(jQuery.sap.storage.Type.local)
 			.get("employeeId"), function(response, status){
 					var jsonRespond =  JSON.parse(response);
-					// TODO 
-					// if nothing was chosen
 				  	resultText.setText(jsonRespond.description);
 				  	resultImage.setSrc(jsonRespond.imageUrl);
 			});
